@@ -1,50 +1,5 @@
-<!DOCTYPE html>
+<?php get_header(); ?>
 
-<html lang="ru-RU">
-<head>
-  <meta charset="utf-8">
-  <title><?php the_title(); ?></title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto%3A400%2C700%2C500&#038;ver=1429600057' type='text/css' media='all' />
-  <link rel='stylesheet' href='<?php bloginfo("template_directory"); ?>/assets/bootstrap/bootstrap.css' type='text/css' media='all'/>
-  <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css?ver=4.2.0' type='text/css' media='all' />
-  <link rel='stylesheet' href='<?php bloginfo("template_directory"); ?>/assets/FlexSlider/flexslider.css?ver=1' type='text/css' media='all' />
-  <link rel='stylesheet' href='<?php bloginfo("template_directory"); ?>/assets/css/main_style.css' type='text/css' media='all'/>
-  <link rel='stylesheet' href='<?php bloginfo("template_directory"); ?>/assets/css/options.css' type='text/css' media='all'/>
-
-  <!-- __заменить -->
-  <link rel="shortcut icon" href="<?php bloginfo("template_directory"); ?>/assets/images/favicon.ico">
-</head>
-
-<body>
-  <!-- Content Area -->
-<div class="oi_container_holder">
-  <div class="oi_head_holder">
-    <div class="row">
-      <div class="col-md-3 col-sm-3 io_xs">
-        <a href="<?php get_site_url(); ?>"><img src="<?php bloginfo("template_directory"); ?>/assets/images/logotype-avrora.png" alt="Rockfolio &#8211; Premium Portfolio &amp; Agency HTML Template"></a>
-      </div>
-      <div class="col-md-9 col-sm-9 io_xs">
-
-        <i class="fa fa-bars fa-2x visible-xs oi_xs_menu"></i>
-        <div class="menu-general-menu-container">
-          <?php wp_nav_menu( array(
-            'theme_location' => 'primary',
-            'container' => 'nav',
-            'items_wrap' => '<ul id="menu-general-menu" class="oi_header_menu">%3$s</ul>'
-          ) ); ?>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="clearfix"></div>
-  <!-- Header -->
   <!-- Content -->
   <section class="page_holder">
     <div class="this_page">
@@ -52,9 +7,8 @@
         <div class="col-sm-12">
            <div class="flexslider mb0" id="port_slider">
             <ul class="slides">
+              <li><img src="<?php bloginfo("template_directory"); ?>/assets/images/front-slider_slide1.jpg" alt="" draggable="false"></li>
               <li><img src="<?php bloginfo("template_directory"); ?>/images/m1.jpg" alt="" draggable="false"></li>
-              <li><img src="<?php bloginfo("template_directory"); ?>/images/m2.jpg" alt="" draggable="false"></li>
-              <li><img src="<?php bloginfo("template_directory"); ?>/images/m3.jpg" alt="" draggable="false"></li>
             </ul>
           </div>
         </div>
@@ -236,39 +190,5 @@
     </div>
   </section>
   <!-- Content -->
-  <!-- Footer Area -->
-  <div class="oi_footer">
-    <div class="row">
-      <div class="col-md-6 oi_foot_left">
-         Copyright © 2015. Design by <a href="http://themeforest.net/user/OrangeIdea/portfolio?ref=FoxSash" target="_blank">OrangeIdea</a>. Coding by <a href="http://themeforest.net/user/FoxSash/portfolio?ref=FoxSash" target="_blank">FoxSash</a>
-      </div>
-      <div class="col-md-6 oi_foot_right">
-         <!-- social block-->
-         <div class="oi_soc_icons">
-          <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
-          <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
-          <a href="#" title="Google+" target="_blank"><i class="fa fa-google-plus fa-fw"></i></a>
-          <a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest-p fa-fw"></i></a>
-          <a href="#" title="LinkedIn" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
-          <a href="#" title="Dribbble" target="_blank"><i class="fa fa-dribbble fa-fw"></i></a>
-          <a href="#" title="YouTube" target="_blank"><i class="fa fa-youtube fa-fw"></i></a>
-        </div>
-         <!-- social block-->
-      </div>
-    </div>
-  </div>
-</div>
-  <script src="<?php bloginfo("template_directory"); ?>/assets/js/jquery-1.11.2.min.js"></script>
-  <script src="<?php bloginfo("template_directory"); ?>/assets/bootstrap/bootstrap.min.js"></script>
 
-  <script type='text/javascript' src='<?php bloginfo("template_directory"); ?>/assets/js/SmoothScroll.js'></script>
-  <script type='text/javascript' src='<?php bloginfo("template_directory"); ?>/assets/js/lightbox.min.js'></script>
-  <script type='text/javascript' src='<?php bloginfo("template_directory"); ?>/assets/FlexSlider/jquery.flexslider-min.js'></script>
-  <script type='text/javascript' src='<?php bloginfo("template_directory"); ?>/assets/js/imagesloaded.js'></script>
-  <script type='text/javascript' src='<?php bloginfo("template_directory"); ?>/assets/js/owl.carousel.min.js'></script>
-
-
-  <script type='text/javascript' src='<?php bloginfo("template_directory"); ?>/assets/js/custom.js'></script>
-  <!-- Footer Area -->
-</body>
-</html>
+<?php get_footer(); ?>
