@@ -30,6 +30,7 @@
         <a href="<?php get_site_url(); ?>"><img src="<?php bloginfo("template_directory"); ?>/assets/images/logotype-avrora.png" alt="Rockfolio &#8211; Premium Portfolio &amp; Agency HTML Template"></a>
       </div>
       <div class="col-md-9 col-sm-9 io_xs">
+
         <i class="fa fa-bars fa-2x visible-xs oi_xs_menu"></i>
         <div class="menu-general-menu-container">
           <?php wp_nav_menu( array(
@@ -38,6 +39,7 @@
             'items_wrap' => '<ul id="menu-general-menu" class="oi_header_menu">%3$s</ul>'
           ) ); ?>
         </div>
+
       </div>
     </div>
   </div>
