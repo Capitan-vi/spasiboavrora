@@ -36,7 +36,8 @@
   <div class="oi_head_holder">
     <div class="row">
       <div class="col-md-6 col-sm-6 io_xs">
-        <a href="<?php get_site_url(); ?>"><img src="<?php bloginfo("template_directory"); ?>/assets/images/logotype-avrora.png" alt="Логотип «СпасибоАврора»"></a>
+        <a class="b-header-logotype" href="<?php get_site_url(); ?>">
+          <img class="b-header-logotype__img" src="<?php bloginfo("template_directory"); ?>/assets/images/logotype-avrora.png" alt="Логотип «СпасибоАврора»"></a>
       </div>
 
       <div class="col-md-6 col-sm-6 io_xs">

@@ -24,7 +24,15 @@ body {
   padding: 0 20px;
 }
 
+/* __Логотип в хэдере */
 
+.b-header-logotype__img {
+  max-width: 100%;
+}
+
+
+
+/* __Слоган в хэдере */
 .b-header-top-slogan {
   font-size: 1.4rem;
 }
