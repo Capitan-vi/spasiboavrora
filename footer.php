@@ -3,29 +3,14 @@
  * @package SpasiboAvrora
  */
 ?>
-
-<!-- Footer Area -->
-  <div class="oi_footer">
-    <div class="row">
-      <div class="col-md-6 oi_foot_left">
-         Copyright © 2015. Design by <a href="http://themeforest.net/user/OrangeIdea/portfolio?ref=FoxSash" target="_blank">OrangeIdea</a>. Coding by <a href="http://themeforest.net/user/FoxSash/portfolio?ref=FoxSash" target="_blank">FoxSash</a>
-      </div>
-      <div class="col-md-6 oi_foot_right">
-         <!-- social block-->
-         <div class="oi_soc_icons">
-          <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
-          <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
-          <a href="#" title="Google+" target="_blank"><i class="fa fa-google-plus fa-fw"></i></a>
-          <a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest-p fa-fw"></i></a>
-          <a href="#" title="LinkedIn" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
-          <a href="#" title="Dribbble" target="_blank"><i class="fa fa-dribbble fa-fw"></i></a>
-          <a href="#" title="YouTube" target="_blank"><i class="fa fa-youtube fa-fw"></i></a>
-        </div>
-         <!-- social block-->
-      </div>
-    </div>
+  <div class="row">
+    <footer class="b-site-footer">
+      <div class="b-site-footer__slogan">-ПСС! ЕСЛИ ХОЧЕШЬ ЛОГОТИП ОТ НАС БЕСПЛАТНО, ОБОСНУЙ И ПОЛУЧИ ЕГО</div>
+      <div class="b-site-footer__caption">2013-2015 « SPASIBOAVRORA</div>
+    </footer>
   </div>
-</div>
+
+
   <script src="<?php bloginfo("template_directory"); ?>/assets/js/jquery-1.11.2.min.js"></script>
   <script src="<?php bloginfo("template_directory"); ?>/assets/bootstrap/bootstrap.min.js"></script>
 
