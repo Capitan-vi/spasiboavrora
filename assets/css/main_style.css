@@ -3,9 +3,9 @@
 
 Project:	ROCKFOLIO THEME
 Version:	1.0
-Last change:	
+Last change:
 Assigned to:	OrangeIdea
-Primary use:	Portfolio site 
+Primary use:	Portfolio site
 -------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
@@ -60,7 +60,7 @@ webkit-transition: all 0.1s ease-in-out;
 transition: all 0.1s ease-in-out;
 -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
 backface-visibility: hidden;
-	
+
 	}
 
 .oi_posts_ul li {
@@ -72,8 +72,11 @@ transition: all 0.3s ease-in-out;
 -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
 backface-visibility: hidden;
 	}
-	
+
+/*
 input:focus, input:active, button:focus, button:active, button:focus, textarea:active, textarea:focus { border:1px solid #e6e6e6 !important; outline:none !important; background:#f9f9f9 !important}
+
+*/
 a { color:#a38671}
 a:hover {color:#a38671}
 a:focus, a:active { outline:none; text-decoration:none;}
@@ -118,12 +121,12 @@ user-select: none;
 	.oi_real_menu > li.current_page_item a { color:#000;}
 	.oi_real_menu > li.current_page_item a { border:none;}
 	.oi_real_menu > li > ul { display:none;}
-	
-	
+
+
 	.oi_xs_menu { margin-top:15px; font-size:14px;}
 	.oi_st_menu_holder  { position:fixed; display:none; background:#fff; top:0px; width:100%; z-index:99; }
 	.oi_st_menu_holder .oi_header_menu > li { padding-top:10px; padding-bottom:10px;}
-	.oi_st_menu_holder .oi_header_menu > li > ul { margin-top:10px;} 
+	.oi_st_menu_holder .oi_header_menu > li > ul { margin-top:10px;}
 	.admin-bar .oi_st_menu_holder { top:32px;}
 	.oi_st_menu_holder .oi_header_menu { margin-top:30px;}
 	.oi_st_menu_holder .oi_logo_place img { max-height:50px; margin-top:30px; margin-bottom:30px;}
@@ -205,24 +208,24 @@ backface-visibility: hidden;
 }
 
 
-	
+
 	/*Load More*/
 	.oi_load_more_holder { text-align:center; padding:30px; background:#fff;letter-spacing:2px; text-transform:uppercase; font-size:11px;}
 	#load_more_port_masorny_posts { color:#000}
 	#load_more_port_masorny_posts:hover { color:red; text-decoration:none; cursor:pointer;}
-	
+
 	/*Filters*/
 	.oi_port_filter_holder {  padding:30px 0; background:#fff; letter-spacing:2px; text-transform:uppercase; font-size:11px; padding-top:0px}
 	.filter_button {  color:#000;  margin-right:20px;  display:inline-block; }
 	.filter_button:hover {color:#a38671; text-decoration:none;}
 	.filter_current { color:#a38671; }
 	.filter_current:hover { color:#a38671; text-decoration:none;}
-	
+
 	/*Portfolio Navvigation*/
 	.oi_port_nav { font-size:20px; text-align:center; margin-top:40px; color:#000; padding-bottom:40px;}
 	.oi_port_nav a { margin:10px; color:#999;}
 	.oi_port_nav a:hover { color:#000}
-	
+
 
 
 /*Footer*/
@@ -345,7 +348,7 @@ h2.blog_title {margin-bottom:0px; font-size:28px; line-height:32px !important; t
     height: 1px;
     width: 0;
     transition: width 0s ease, background .2s ease;
-	
+
 	}
 .oi_blog_post_cat a:after, .oi_readmore_btn:after {
 	content: '';
@@ -359,7 +362,7 @@ h2.blog_title {margin-bottom:0px; font-size:28px; line-height:32px !important; t
     transition: width .2s ease;
 }
 
-.oi_post.sticky .oi_post_holder { padding:40px; background:#f3f3ef} 
+.oi_post.sticky .oi_post_holder { padding:40px; background:#f3f3ef}
 .oi_blog_post_featuder_holder { position:relative; margin-bottom:20px;}
 .oi_tringle { position:absolute; z-index:9999; left:50%; margin-left:-20px; bottom:0px; width: 0; height: 0; border-bottom: 20px solid #fff; border-right: 20px solid transparent; border-top: 20px solid transparent;  border-left: 20px solid transparent;}
 
@@ -392,9 +395,9 @@ h2.blog_title {margin-bottom:0px; font-size:28px; line-height:32px !important; t
 .oi_img_grid a:hover { cursor:crosshair}
 
 
- 
+
 .transition {
-    -webkit-transform: scale(1.05); 
+    -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -o-transform: scale(1.05);
     transform: scale(1.05);
@@ -422,7 +425,7 @@ h2.blog_title {margin-bottom:0px; font-size:28px; line-height:32px !important; t
 .io_widget_title {padding-left:20px;  margin-bottom:20px; border-left:1px solid #000; text-transform:uppercase; letter-spacing:3px; color:#000}
 .oi_widget { margin-bottom:30px; padding:30px; background:#fafafa; font-size:12px !important}
 .oi_widget ul:not(#cbox):not(.oi_instagram_widget_ul) { padding:0px; list-style:none;}
-.oi_widget ul:not(#cbox):not(.oi_instagram_widget_ul) li { 
+.oi_widget ul:not(#cbox):not(.oi_instagram_widget_ul) li {
 border-bottom:1px dotted #ededed;
 }
 .oi_cat_count { float: right; padding:2px 4px; background:#ededed; margin-top:6px; font-size:10px; min-width:30px; text-align:center;}
@@ -476,7 +479,7 @@ input, textarea{ padding:10px;}
 	#wp-calendar tfoot #prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }
 	#wp-calendar thead th { background:#ededed; text-align:center;  border: 1px solid #fff;}
 	#wp-calendar caption { font-weight:bold; color:red}
-	
+
 	#cbox .oi_flickr_item img { border-radius:0px; margin-bottom:10px;}
 	.oi_flickr_item { overflow:hidden;}
 	#cbox .oi_flickr_item { float:left; width:20%; border:1px solid #fff}
@@ -686,10 +689,10 @@ blockquote {
 		width:100%;
 		display:block;
 	}
-	
+
 	.post-categories > li > .sub-menu > li > a { padding-left:30px !important}
 	.post-categories > li >a { width:100%;}
-	
+
 	.post-categories > li:hover > .sub-menu {
 		display:block;
 		visibility:visible;
@@ -756,7 +759,7 @@ embed { width:100%;}
 	margin-bottom:20px;
   }
   dl { margin-bottom:0px;}
-  
+
  .gallery dl {
     border: none;
     padding: 0px;
@@ -769,7 +772,7 @@ embed { width:100%;}
   .gallery dt:after {
     content: "";
   }
-  
+
   address, acronym{ padding:10px; background:#f6f6f6; font-style:italic;}
   abbr, big { font-weight:bold;}
 
@@ -787,7 +790,7 @@ embed { width:100%;}
 .oi_vc_text_span {
   display: table-cell;
   vertical-align: middle;
-  line-height: 22px;      
+  line-height: 22px;
 }
 .oi_r_t_w_s .oi_strange_portfolio_item  { padding:15px;}
 .oi_r_t_w_s .oi_port_filter_holder { background:none; padding:0px; margin-bottom:15px;}
