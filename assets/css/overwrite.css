@@ -155,14 +155,13 @@ body {
         content: '..................................................................................................................................................................................................................................................................................';
         position: absolute;
         right: 0;
+        display: inline;
       }
         .b-order-logotype__option-left-text {
           position: relative;
           z-index: 1;
-          display: inline-block;
           background-color: #BAB137;
         }
-
   .b-order-logotype__link {
     display: inline-block;
     width: 100%;
