@@ -64,7 +64,7 @@
 
     <!-- __Блок с сотрудниками -->
     <div class="row row-fluid">
-      <div class="b-team">
+      <div class="b-team top-trangled top-trangled_grey-light">
         <div class="container">
 
           <?php query_posts('post_type=team-member'); ?>
@@ -131,7 +131,7 @@
 
     <!-- __Нам говорят "спасибо" -->
     <div class="row row-fluid">
-      <div class="b-reviews">
+      <div class="b-reviews top-trangled top-trangled_grey-light">
         <div class="b-reviews__head">
           <h2 class="b-reviews__heading">Нам говорят спасибо</h2>
           <div class="b-reviews__intro-text">множество хороших людей оставляют свои позитивные отзывы в соц. сетях с тэгом #spasiboavrora, это единственная реклама нашего проекта</div>
@@ -177,7 +177,7 @@
 
     <!-- __ВЫ МОЖЕТЕ  ЛЕГКО СВЯЗАТЬСЯ С НАМИ -->
     <div class="row row-fluid">
-      <div class="b-contacts-front-page">
+      <div class="b-contacts-front-page top-trangled top-trangled_green">
 
         <div class="b-contacts-front-page__head">
           <h2 class="b-contacts-front-page__heading">Вы можете легко связаться с нами</h2>
