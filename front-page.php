@@ -14,15 +14,19 @@
         </div>
       </div>
     </div>
+
+    <!-- __Делаем отличные логотипы -->
     <div class="row row-fluid mt120">
       <div class="container">
         <div class="col-sm-12">
-          <h1 class="text-center">C O M P A N Y</h1>
-          <h6 class="text-center">Over <strong class="colored">40,000</strong> customers use our themes<br>
-           to power their websites.</h6>
+          <div class="b-about-intro">
+            <h1 class="b-about-intro__heading text-center">Мы делаем отличные логотипы</h1>
+            <h6 class="b-about-intro__text text-center">для индивидуальных предпринимателей,небольших проектов, некоммерческих организаций и мероприятий по фиксированной цене 4000 р. или бесплатно</h6>
+          </div>
         </div>
       </div>
     </div>
+
     <div class="container"></div>
     <div class="row row-fluid mb120m60">
       <div class="container">
@@ -55,139 +59,157 @@
         </div>
       </div>
     </div>
-    <div class="container"></div>
-    <div class="row row-fluid bg_img1 full_row">
-      <div class="container">
-        <div class="col-sm-12">
-          <div class="mb35">
-            <h1 class="text-center">S E R V I C E S</h1>
-            <h6 class="text-center">Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam.</h6>
-          </div>
-          <div class="row row-fluid">
-            <div class="col-sm-5">
-              <div class="oi_vc_icon">
-                <span class="fa fa-fw fa-3x colored fa-codepen"></span>
-                <div class="oi_vc_text_span">
-                  <h5 class="oi_icon_titile ">WEB DEVELOPMENT</h5>
-                  <span>Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar</span>
+
+    <div class="container"> </div>
+
+    <!-- __Блок с сотрудниками -->
+    <div class="row row-fluid">
+      <div class="b-team">
+        <div class="container">
+
+          <?php query_posts('post_type=team-member'); ?>
+            <?php while ( have_posts() ): the_post(); ?>
+
+                <div class="col-md-2">
+                  <section class="b-team-member">
+                    <div class="b-team-member__photo">
+                      <img class="b-team-member__img" src="<?php the_field('team-member_photo'); ?>" alt="Фото сотрудника">
+                    </div>
+                    <div class="b-team-member__about">
+                      <h4 class="b-team-member__name"><?php the_title(); ?></h4>
+                      <span class="b-team-member__caption"><?php the_field('team-member_name'); ?></span>
+                    </div>
+                  </section>
                 </div>
-              </div>
-              <div class="oi_vc_icon">
-                <span class="fa fa-fw fa-3x colored fa-angellist"></span>
-                <div class="oi_vc_text_span">
-                  <h5 class="oi_icon_titile ">SEO OPTIMISATION</h5>
-                  <span>Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar</span>
-                </div>
-              </div>
-              <div class="oi_vc_icon">
-                <span class="fa fa-fw fa-3x colored fa-paper-plane-o"></span>
-                <div class="oi_vc_text_span">
-                  <h5 class="oi_icon_titile ">BRANDING &amp; IDENTITY</h5>
-                  <span>Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit.</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-2"></div>
-            <div class="col-sm-5">
-              <div class="oi_vc_icon">
-                <span class="fa fa-fw fa-3x colored fa-paper-plane-o"></span>
-                <div class="oi_vc_text_span">
-                  <h5 class="oi_icon_titile ">BRANDING &amp; IDENTITY</h5>
-                  <span>Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit.</span>
-                </div>
-              </div>
-              <div class="oi_vc_icon">
-                <span class="fa fa-fw fa-3x colored fa-angellist"></span>
-                <div class="oi_vc_text_span">
-                  <h5 class="oi_icon_titile ">SEO OPTIMISATION</h5>
-                  <span>Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar</span>
-                </div>
-              </div>
-              <div class="oi_vc_icon">
-                <span class="fa fa-fw fa-3x colored fa-codepen"></span>
-                <div class="oi_vc_text_span">
-                  <h5 class="oi_icon_titile ">WEB DEVELOPMENT</h5>
-                  <span>Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar</span>
-                </div>
-              </div>
-            </div>
-          </div>
+
+            <?php endwhile; ?>
+          <?php wp_reset_query(); ?>
+
         </div>
       </div>
     </div>
-    <div class="container"></div>
-    <div class="row row-fluid mt120 full_row">
-      <div class="container">
-        <div class="col-sm-4">
-          <div class="oi_vc_potrfolio oi_x2 bg_ceron">
-            <a class="oi_vc_port_mask bg_cdb48c" href="ceron.html">
-            <div class="oi_vc_text_span text-center">
-              <h3 class="oi_sub_legend text_fff">Ceron</h3>
-              <div class="oi_vc_port_cat text_fff">
-                Motion, Print
-              </div>
-              <div class="oi_vc_sep bg_fff"></div>
-            </div>
-            </a>
+
+    <div class="container"> </div>
+
+    <!-- __Вы заказываете логотип за 4000р. -->
+    <div class="row row-fluid">
+      <div class="b-order-logotype">
+        <div class="container">
+
+          <div class="b-order-logotype__head">
+            <h2 class="b-order-logotype__heading">Вы заказываете логотип за 4000 р.</h2>
+            <div class="b-order-logotype__caption">и получаете полный дизайн-проект для старта вашего бизнеса куда входят следующие 6 позиций:</div>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="oi_vc_potrfolio oi_x2 bg_washboard">
-            <a class="oi_vc_port_mask bg_77cfd0" href="washboard.html">
-            <div class="oi_vc_text_span text-center">
-              <h3 class="oi_sub_legend text_fff">Washboard</h3>
-              <div class="oi_vc_port_cat text_fff">
-                Illustration
-              </div>
-              <div class="oi_vc_sep bg_fff"></div>
+
+          <div class="b-order-logotype__options">
+            <div class="b-order-logotype__option-row">
+              <div class="b-order-logotype__option-left"><span class="b-order-logotype__option-left-text">ВАШ ЛОГОТИП в векторном и растровом формате</span></div>
             </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="oi_vc_potrfolio oi_x2 bg_flight">
-            <a class="oi_vc_port_mask bg_cdbf90" href="flight-to-the-flats.html">
-            <div class="oi_vc_text_span text-center">
-              <h3 class="oi_sub_legend text_000">Flight To The Flats</h3>
-              <div class="oi_vc_port_cat text_000">
-                Presentaion
-              </div>
-              <div class="oi_vc_sep bg_000"></div>
+
+            <div class="b-order-logotype__option-row">
+              <div class="b-order-logotype__option-left"><span class="b-order-logotype__option-left-text">ЛОГОБУК в векторном формате</span></div>
             </div>
-            </a>
+
+            <div class="b-order-logotype__option-row">
+              <div class="b-order-logotype__option-left"><span class="b-order-logotype__option-left-text">ОФОРМЛЕНИЕ СОЦ.СЕТЕЙ (vk/fb/instagram) в растре</span></div>
+            </div>
+
+            <div class="b-order-logotype__option-row">
+              <div class="b-order-logotype__option-left"><span class="b-order-logotype__option-left-text">ЦВЕТОВАЯ КАРТА с указанием цветов в системе HEX</span></div>
+            </div>
+
+            <div class="b-order-logotype__option-row">
+              <div class="b-order-logotype__option-left"><span class="b-order-logotype__option-left-text">ПОДБОР ШРИФТОВ готовых для использовани</span></div>
+            </div>
+
+            <div class="b-order-logotype__button">
+              Оформить заказ
+            </div>
           </div>
+
         </div>
       </div>
     </div>
-    <div class="container"></div>
-    <div class="row row-fluid full_row bg_img">
-      <div class="container">
-        <div class="col-sm-12">
-          <div class="mb60">
-            <h1 class="text-center">CLIENTS / PARTNERS</h1>
-            <h6 class="text-center">We love them all</h6>
+
+    <div class="container"> </div>
+
+    <!-- __Нам говорят "спасибо" -->
+    <div class="row row-fluid">
+      <div class="b-reviews">
+        <div class="b-reviews__head">
+          <h2 class="b-reviews__heading">Нам говорят спасибо</h2>
+          <div class="b-reviews__intro-text">множество хороших людей оставляют свои позитивные отзывы в соц. сетях с тэгом #spasiboavrora, это единственная реклама нашего проекта</div>
+        </div>
+
+        <div class="row row-fluid">
+          <div class="b-reviews__items">
+
+            <?php query_posts('post_type=review'); ?>
+              <?php while ( have_posts() ): the_post(); ?>
+
+              <div class="col-md-6">
+              <div class="b-review-item clearfix">
+                <div class="b-review-item__photo">
+                  <img src="<?php the_field('review_autor_photo'); ?>" alt="" class="b-review-item__img">
+                </div>
+
+                <div class="b-review-item__content">
+                  <div class="b-review-item__name-desk">
+                    <div class="b-review-item__name"><?php the_title(); ?></div>
+                    <div class="b-review-item__desk"><?php the_field('review_autor_caption'); ?></div>
+                  </div>
+
+                  <div class="b-review-item__text">
+                    <?php the_field('review_text'); ?>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+              <?php endwhile; ?>
+            <?php wp_reset_query(); ?>
+
+
           </div>
         </div>
-        <div class="col-sm-2">
-          <img src="<?php bloginfo("template_directory"); ?>/images/l5.png" class="img-responsive" alt="l5">
-        </div>
-        <div class="col-sm-2">
-          <img src="<?php bloginfo("template_directory"); ?>/images/l3.png" class="img-responsive" alt="l3">
-        </div>
-        <div class="col-sm-2">
-          <img src="<?php bloginfo("template_directory"); ?>/images/l1.png" class="img-responsive" alt="l1">
-        </div>
-        <div class="col-sm-2">
-          <img src="<?php bloginfo("template_directory"); ?>/images/l2.png" class="img-responsive" alt="l2">
-        </div>
-        <div class="col-sm-2">
-          <img src="<?php bloginfo("template_directory"); ?>/images/l4.png" class="img-responsive" alt="l4">
-        </div>
-        <div class="col-sm-2">
-          <img src="<?php bloginfo("template_directory"); ?>/images/l6.png" class="img-responsive" alt="l6">
-        </div>
+
+
       </div>
     </div>
+
+    <div class="container"> </div>
+
+    <!-- __ВЫ МОЖЕТЕ  ЛЕГКО СВЯЗАТЬСЯ С НАМИ -->
+    <div class="row row-fluid">
+      <div class="b-contacts-front-page">
+
+        <div class="b-contacts-front-page__head">
+          <h2 class="b-contacts-front-page__heading">Вы можете легко связаться с нами</h2>
+          <div class="b-contacts-front-page__intro-text">
+            в соц.сетях, позвонив по телефону или оставив вопрос и контакты для обратной связи
+          </div>
+        </div>
+
+        <div class="row row-fluid">
+          <div class="col-md-6">
+              <ul class="b-contacts-front-page__list">
+                <li class="b-contacts-front-page__list-item">
+                  <a href="tel:+79112394587" class="b-contacts-front-page__item-link">+7 911 239 45 87</a></li>
+                <li class="b-contacts-front-page__list-item">
+                  <a href="mailto:spasiboavrora@gmail.com" class="b-contacts-front-page__item-link b-contacts-front-page__item-link_underline">spasiboavrora@gmail.com</a></li>
+                <li class="b-contacts-front-page__list-item">
+                  <a href="vk.com/spasiboavrora" class="b-contacts-front-page__item-link b-contacts-front-page__item-link_underline">vk.com/spasiboavrora</a></li>
+              </ul>
+          </div>
+
+          <div class="col-md-6">
+            <?php echo do_shortcode('[contact-form-7 id="26" title="Форма обратной связи" html_class="b-feedback-form"]'); ?>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </section>
   <!-- Content -->
 

@@ -1,0 +1,397 @@
+body {
+  font-size: 15px;
+}
+.page_holder {
+  background-color: transparent;
+}
+@media all {
+  body {
+    padding: 40px 55px;
+  }
+}
+
+
+
+
+.menu-general-menu-container {
+  float: right;
+}
+
+.oi_header_menu {
+  margin-top: 0;
+}
+.oi_header_menu li a {
+  padding: 0 20px;
+}
+
+
+.b-header-top-slogan {
+  font-size: 1.4rem;
+}
+
+.b-header-tel {
+  float: left;
+}
+  .b-header-tel__link {
+    display: inline-block;
+    padding: 0 6px;
+    font-weight: bold;
+    color: #333;
+    background-color: #BAB137;
+  }
+  .b-header-tel__link:focus,
+  .b-header-tel__link:hover {
+    text-decoration: none;
+    color: #fff;
+    transition: .2s;
+  }
+
+.b-about-intro {
+  max-width: 490px;
+  margin: 0 auto;
+}
+.b-about-intro__heading {
+  font-size: 28px; /* */
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+/* __Блок с сотрудниками */
+.b-team {
+  background-color: #ECECEC;
+}
+
+.b-team-member {
+  background-color: #ccc;
+}
+
+  .b-team-member__photo {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+    .b-team-member__img {
+      max-width: 130px;
+    }
+
+  .b-team-member__about {
+    padding-left: 40px;
+  }
+    .b-team-member__name {
+      margin-bottom: 0;
+      font-size: ;
+      line-height: .9em;
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+    .b-team-member__caption {
+      display: inline-block;
+      line-height: 1.15em;
+      text-transform: lowercase;
+    }
+
+
+/* __Вы заказываете логотип за 4000р. */
+.b-order-logotype {
+  padding: 80px 0;
+  color: #fff;
+  background-color: #BAB137;
+}
+
+  .b-order-logotype__head {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .b-order-logotype__head:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid #fff;
+  }
+
+    .b-order-logotype__heading {
+      font-size: 28px; /* */
+      font-size: 2.8rem;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .b-order-logotype__caption {
+      padding: 0 80px;
+    }
+
+  .b-order-logotype__options {
+    color: #fff;
+  }
+    .b-order-logotype__option-row {
+      position: relative;
+      display: block;
+      overflow: hidden;
+    }
+
+      .b-order-logotype__option-left {
+        float: left;
+        max-width: 75%;
+        font-size: 2.5rem;
+        margin-bottom: .6em;
+      }
+      .b-order-logotype__option-left:after { /* !!! */
+        content: '..................................................................................................................................................................................................................................................................................';
+        position: absolute;
+        right: 0;
+      }
+        .b-order-logotype__option-left-text {
+          position: relative;
+          z-index: 1;
+          display: inline-block;
+          background-color: #BAB137;
+        }
+
+  .b-order-logotype__button {
+    margin-top: .7em;
+    padding: 25px;
+    border: 3px solid #fff;
+    font-size: 6rem;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+/* __Отзывы ("Нам говорят "спасибо"") */
+.b-reviews {
+  padding: 80px 100px;
+  background-color: #ECECEC;
+  color: #000;
+}
+
+  .b-reviews__head {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+    .b-reviews__heading {
+      font-size: 28px; /* */
+      font-size: 2.8rem;
+      margin-bottom: .3em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .b-reviews__intro-text {
+      font-size: ;
+      margin-bottom: 3em;
+      line-height: 1.28em;
+      font-weight: bold;
+    }
+
+  .b-reviews__items {
+    padding: 0 100px;
+  }
+
+
+.b-review-item {
+  margin-bottom: 95px;
+}
+  .b-review-item__photo {
+    position: relative;
+    width: 40%; /* */
+    margin-right: 5%;
+    float: left;
+    text-align: center;
+  }
+  .b-review-item__photo:after {
+    content: '<';
+    position: absolute;
+    top: 13px;
+    right: -13px;
+    color: #fff;
+    font-size: 3rem;
+    line-height: .7em;
+    transform: rotate(-26deg);
+  }
+    .b-review-item__img {
+      max-width: 100%;
+      border-radius: 50%;
+    }
+
+  .b-review-item__content {
+    float: left;
+    width: 55%;
+  }
+
+    .b-review-item__name-desk {
+      display: inline-block;
+      padding: 4px;
+      padding-bottom: 3px;
+      background-color: #BAB137;
+    }
+      .b-review-item__name {
+        font-size: 2rem;
+        line-height: 1.1em;
+        margin-bottom: .05em;
+        font-weight: bold;
+      }
+      .b-review-item__desk {
+        font-size: 1.2rem;
+        line-height: 1.1em;
+      }
+
+    .b-review-item__text {
+      font-size: 1.2rem;
+      margin-top: 1em;
+      line-height: 1.2em;
+      font-style: italic;
+    }
+    .b-review-item__text p:before {
+      content: ' - «';
+    }
+    .b-review-item__text p:after {
+      content: '»';
+    }
+
+
+
+/* __Вы можете легко связаться с нами */
+.b-contacts-front-page {
+  padding: 80px 100px;
+  color: #fff;
+  background-color: #BAB137;
+}
+
+  .b-contacts-front-page__head {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+    .b-contacts-front-page__heading {
+      font-size: ;
+      line-height: ;
+      margin-bottom: ;
+    }
+
+    .b-contacts-front-page__intro-text {
+      font-size: ;
+      line-height: ;
+
+    }
+
+  .b-contacts-front-page__list {
+    text-align: left;
+  }
+    .b-contacts-front-page__list-item {
+      font-size: 3rem;
+      margin-bottom: .9em;
+    }
+      .b-contacts-front-page__item-link {
+        color: #fff;
+      }
+      .b-contacts-front-page__item-link_underline {
+        text-decoration: underline;
+      }
+
+  /* __Форма обратной связи */
+  .b-feedback-form input[type="text"],
+  .b-feedback-form input[type="email"],
+  .b-feedback-form input[type="tel"],
+  .b-feedback-form input[type="submit"],
+  .b-feedback-form textarea {
+    padding: 10px 15px;
+    font-size: 2rem;
+    line-height: .8em;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+  }
+  .b-feedback-form input[type="text"]:focus,
+  .b-feedback-form input[type="email"]:focus,
+  .b-feedback-form input[type="tel"]:focus,
+  .b-feedback-form input[type="submit"]:focus,
+  .b-feedback-form textarea:focus {
+    background-color: rgba(69, 69, 69, 0.15);
+    outline: 0;
+    transition: .2s;
+  }
+
+  .b-feedback-form__container {
+    font-size: 0;
+  }
+
+
+  .b-feedback-form p,
+  .b-feedback-form span {
+    display: inline;
+  }
+
+  .b-feedback-form .b-feedback-form__input-40-p {
+    display: inline-block;
+    width: 40%;
+    margin-right: 5%;
+  }
+  .b-feedback-form .b-feedback-form__input-60-p {
+    display: inline-block;
+    width: 55%;
+  }
+
+  .b-feedback-form input.b-feedback-form__submit {
+    width: auto;
+  }
+
+  .b-feedback-form textarea {
+    resize: vertical;
+  }
+
+
+
+  .b-feedback-form input:-ms-input-placeholder,
+  .b-feedback-form textarea:-ms-input-placeholder {
+    font-size: 2rem;
+    line-height: .8em;
+    color: #fff;
+  }
+  .b-feedback-form input:-moz-placeholder,
+  .b-feedback-form textarea:-moz-placeholder { /* Firefox 18- */
+    font-size: 2rem;
+    line-height: .8em;
+    color: #fff;
+  }
+  .b-feedback-form input::-moz-placeholder,
+  .b-feedback-form textarea::-moz-placeholder {  /* Firefox 19+ */
+    font-size: 2rem;
+    line-height: .8em;
+    color: #fff;
+  }
+  .b-feedback-form input::-webkit-input-placeholder,
+  .b-feedback-form textarea::-webkit-input-placeholder {
+    font-size: 2rem;
+    line-height: 1.6em;
+    color: #fff;
+  }
+
+
+
+/* __Футер сайта */
+.b-site-footer {
+  padding: 40px 17%;
+  color: #fff;
+  background-color: #434142;
+}
+
+  .b-site-footer__slogan {
+    float: left;
+    font-size: 2rem;
+  }
+
+  .b-site-footer__caption {
+    font-size: 2rem;
+    text-align: center;
+  }
