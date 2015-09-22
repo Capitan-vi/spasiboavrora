@@ -66,11 +66,11 @@ body {
 
 /* __Блок с сотрудниками */
 .b-team {
+  padding: 40px 0;
   background-color: #ECECEC;
 }
 
 .b-team-member {
-  background-color: #ccc;
 }
 
   .b-team-member__photo {
@@ -216,7 +216,7 @@ body {
 
 
 .b-review-item {
-  margin-bottom: 95px;
+  margin-bottom: 50px;
 }
   .b-review-item__photo {
     position: relative;
