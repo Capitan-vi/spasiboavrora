@@ -525,6 +525,7 @@ textarea {
   padding-right: 15px;
 }
 .flex-direction-nav .flex-next {
+  background-color: #000;/* */
   padding: 20px;
   padding-left: 15px;
 }
@@ -534,8 +535,16 @@ textarea {
   width: 0;
   height: 0;
   padding: 0 0;
+}
+.flex-direction-nav a.flex-prev:before {
   border-top: 25px solid transparent;
   border-right: 28px solid rgb(186, 177, 55);
+  border-bottom: 25px solid transparent;
+}
+
+.flex-direction-nav a.flex-next:before {
+  border-top: 25px solid transparent;
+  border-left: 28px solid rgb(186, 177, 55);
   border-bottom: 25px solid transparent;
 }
 
