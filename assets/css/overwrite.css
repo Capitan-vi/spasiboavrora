@@ -92,7 +92,7 @@ body {
 
 /* __Вы заказываете логотип за 4000р. */
 .b-order-logotype {
-  padding: 80px 0;
+  padding: 80px 40px;
   color: #fff;
   background-color: #BAB137;
 }
@@ -167,7 +167,7 @@ body {
 
 /* __Отзывы ("Нам говорят "спасибо"") */
 .b-reviews {
-  padding: 80px 100px;
+  padding: 80px 40px;
   background-color: #ECECEC;
   color: #000;
 }
@@ -261,7 +261,7 @@ body {
 
 /* __Вы можете легко связаться с нами */
 .b-contacts-front-page {
-  padding: 80px 100px;
+  padding: 80px 40px;
   color: #fff;
   background-color: #BAB137;
 }
@@ -381,14 +381,15 @@ body {
 
 /* __Футер сайта */
 .b-site-footer {
-  padding: 40px 17%;
+  padding: 40px 40px;
   color: #fff;
   background-color: #434142;
 }
 
   .b-site-footer__slogan {
-    float: left;
     font-size: 2rem;
+    margin-bottom: .5em;
+    text-align: center;
   }
 
   .b-site-footer__caption {
