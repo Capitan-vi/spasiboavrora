@@ -9,6 +9,28 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Circle';
+  src: url('../fonts/circe-bold.eot');
+  src: url('../fonts/circe-bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/circe-bold.woff2') format('woff2'),
+       url('../fonts/circe-bold.woff') format('woff'),
+       url('../fonts/circe-bold.ttf') format('truetype'),
+       url('../fonts/circe-bold.svg#circe-bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circle';
+  src: url('../fonts/circe-bold.eot');
+  src: url('../fonts/circe-bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/circe-bold.woff2') format('woff2'),
+       url('../fonts/circe-bold.woff') format('woff'),
+       url('../fonts/circe-bold.ttf') format('truetype'),
+       url('../fonts/circe-bold.svg#circe-bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
 
 
 body {
@@ -19,6 +41,15 @@ body {
   color: #222;
   background-color: #f5f5f5;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2em;
+}
+
 .oi_legend {
   font-family: 'Circle';
   font-weight: 700;
