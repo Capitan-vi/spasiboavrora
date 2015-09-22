@@ -3,14 +3,7 @@
   <!-- Content -->
   <div class="this_page">
     <div class="row row-fluid">
-      <!-- <div class="col-sm-12"> -->
-         <div class="flexslider mb0" id="port_slider">
-          <ul class="slides">
-            <li><img src="<?php bloginfo("template_directory"); ?>/assets/images/front-slider_slide1.jpg" alt="" draggable="false"></li>
-            <li><img src="<?php bloginfo("template_directory"); ?>/images/m1.jpg" alt="" draggable="false"></li>
-          </ul>
-        </div>
-      <!-- </div> -->
+        <?php get_template_part('template-parts/front-slider'); ?>
     </div>
   </div>
 
