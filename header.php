@@ -23,6 +23,9 @@
   <link rel='stylesheet' href='<?php bloginfo("template_directory"); ?>/assets/css/main_style.css' type='text/css' media='all'/>
   <link rel='stylesheet' href='<?php bloginfo("template_directory"); ?>/assets/css/options.css' type='text/css' media='all'/>
 
+  <!-- __Перезаписываемые стили -->
+  <link rel='stylesheet' href='<?php bloginfo("template_directory"); ?>/assets/css/overwrite.css' type='text/css' media='all'/>
+
   <!-- __заменить -->
   <link rel="shortcut icon" href="<?php bloginfo("template_directory"); ?>/assets/images/favicon.ico">
   <?php wp_head(); ?>
@@ -32,12 +35,20 @@
 <div class="oi_container_holder">
   <div class="oi_head_holder">
     <div class="row">
-      <div class="col-md-3 col-sm-3 io_xs">
+      <div class="col-md-6 col-sm-6 io_xs">
         <a href="<?php get_site_url(); ?>"><img src="<?php bloginfo("template_directory"); ?>/assets/images/logotype-avrora.png" alt="Логотип «СпасибоАврора»"></a>
       </div>
-      <div class="col-md-9 col-sm-9 io_xs">
 
+      <div class="col-md-6 col-sm-6 io_xs">
         <i class="fa fa-bars fa-2x visible-xs oi_xs_menu"></i>
+
+        <div class="b-header-top-slogan">
+          МЫ ДЕЛАЕМ ЛОГОТИПЫ ПО НИЗКОЙ ЦЕНЕ <strong>4000 Р.</strong> ИЛИ <strong>БЕСПЛАТНО</strong>
+        </div>
+
+        <div class="b-header-tel">
+          <a class="b-header-tel__link" href="tel:+79112394587">+7 - 911 - 239-45-87</a>
+        </div>
         <div class="menu-general-menu-container">
           <?php wp_nav_menu( array(
             'theme_location' => 'primary',
