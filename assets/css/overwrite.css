@@ -10,6 +10,10 @@ body {
   }
 }
 
+.this_page {
+  background: transparent;
+}
+
 
 
 
@@ -441,3 +445,18 @@ body {
     font-size: 2rem;
     text-align: center;
   }
+
+
+
+
+
+
+
+
+
+
+/*  */
+.page-content {
+  min-height: 200px;
+  padding: 80px 40px;
+}
