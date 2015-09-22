@@ -121,9 +121,7 @@
               <div class="b-order-logotype__option-left"><span class="b-order-logotype__option-left-text">ПОДБОР ШРИФТОВ готовых для использовани</span></div>
             </div>
 
-            <div class="b-order-logotype__button">
-              Оформить заказ
-            </div>
+            <a class="b-order-logotype__link" href="#">Оформить заказ</a>
           </div>
 
       </div>
