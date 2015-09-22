@@ -94,7 +94,6 @@
     <!-- __Вы заказываете логотип за 4000р. -->
     <div class="row row-fluid">
       <div class="b-order-logotype">
-        <div class="container">
 
           <div class="b-order-logotype__head">
             <h2 class="b-order-logotype__heading">Вы заказываете логотип за 4000 р.</h2>
@@ -127,7 +126,6 @@
             </div>
           </div>
 
-        </div>
       </div>
     </div>
 
