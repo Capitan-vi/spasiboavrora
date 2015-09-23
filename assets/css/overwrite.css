@@ -51,12 +51,20 @@ textarea {
   float: right;
 }
 
+
+
+
+.oi_head_holder:hover {
+  color: #bbb033;
+  transition: .2s;
+}
 .oi_header_menu {
   margin-top: 0;
 }
 .oi_header_menu li a {
   padding: 0 20px;
 }
+
 
 /* __Логотип в хэдере */
 
@@ -68,7 +76,7 @@ textarea {
 
 /* __Слоган в хэдере */
 .b-header-top-slogan {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .b-header-tel {
@@ -321,35 +329,49 @@ textarea {
 }
 
   .b-contacts-front-page__head {
-    max-width: 500px;
     margin: 0 auto;
     margin-bottom: 60px;
     text-align: center;
   }
 
     .b-contacts-front-page__heading {
-      font-size: ;
-      line-height: ;
-      margin-bottom: ;
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 2.9rem;
+      line-height: 1.2em;
+      margin-bottom: .4em;
+      text-transform: uppercase; /* */
     }
 
     .b-contacts-front-page__intro-text {
-      font-size: ;
-      line-height: ;
-
+      max-width: 500px;
+      margin: 0 auto;
+      font-size: 1.6rem;
+      line-height: 1.2em;
     }
 
   .b-contacts-front-page__list {
     text-align: left;
   }
     .b-contacts-front-page__list-item {
-      font-size: 3rem;
+      font-size: 2.9rem;
       margin-bottom: .9em;
     }
       .b-contacts-front-page__item-link {
         color: #fff;
       }
+      .b-contacts-front-page__item-link:focus,
+      .b-contacts-front-page__item-link:hover {
+        color: #434242;
+        text-decoration: none;
+        transition: .2s;
+      }
+
       .b-contacts-front-page__item-link_underline {
+        text-decoration: underline;
+      }
+      .b-contacts-front-page__item-link_underline:focus,
+      .b-contacts-front-page__item-link_underline:hover {
         text-decoration: underline;
       }
 
@@ -360,8 +382,8 @@ textarea {
   .b-feedback-form input[type="submit"],
   .b-feedback-form textarea {
     padding: 10px 15px;
-    font-size: 2rem;
-    line-height: .8em;
+    font-size: 1.6rem;
+    line-height: 1.8em;
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;
@@ -399,6 +421,12 @@ textarea {
   .b-feedback-form input.b-feedback-form__submit {
     width: auto;
   }
+  .b-feedback-form input.b-feedback-form__submit:focus,
+  .b-feedback-form input.b-feedback-form__submit:hover {
+    color: #BAB137;
+    background-color: #fff;
+    transition: .2s;
+  }
 
   .b-feedback-form textarea {
     resize: vertical;
@@ -408,26 +436,26 @@ textarea {
 
   .b-feedback-form input:-ms-input-placeholder,
   .b-feedback-form textarea:-ms-input-placeholder {
-    font-size: 2rem;
-    line-height: .8em;
+    font-size: 1.6rem;
+    line-height: 1.8em;
     color: #fff;
   }
   .b-feedback-form input:-moz-placeholder,
   .b-feedback-form textarea:-moz-placeholder { /* Firefox 18- */
-    font-size: 2rem;
-    line-height: .8em;
+    font-size: 1.6rem;
+    line-height: 1.8em;
     color: #fff;
   }
   .b-feedback-form input::-moz-placeholder,
   .b-feedback-form textarea::-moz-placeholder {  /* Firefox 19+ */
-    font-size: 2rem;
-    line-height: .8em;
+    font-size: 1.6rem;
+    line-height: 1.8em;
     color: #fff;
   }
   .b-feedback-form input::-webkit-input-placeholder,
   .b-feedback-form textarea::-webkit-input-placeholder {
-    font-size: 2rem;
-    line-height: 1.6em;
+    font-size: 1.6rem;
+    line-height: 1.8em;
     color: #fff;
   }
 
@@ -437,7 +465,7 @@ textarea {
 .b-site-footer {
   padding: 40px 40px;
   color: #fff;
-  background-color: #434142;
+  background-color: #434242;
 }
 
   .b-site-footer__slogan {
