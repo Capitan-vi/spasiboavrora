@@ -50,6 +50,11 @@ textarea {
 .menu-general-menu-container {
   float: right;
 }
+  .menu-general-menu-container a:focus,
+  .menu-general-menu-container a:hover {
+    text-decoration: underline;
+    transition: .2s;
+  }
 
 
 
@@ -85,6 +90,7 @@ textarea {
   .b-header-tel__link {
     display: inline-block;
     padding: 0 6px;
+    padding-top: 3px;
     font-weight: bold;
     color: #333;
     background-color: #BAB137;
@@ -493,6 +499,9 @@ textarea {
   min-height: 200px;
   padding: 80px 40px;
 }
+  .page-content_white {
+    background-color: #fff;
+  }
 
 
 /* __Бриф */
@@ -548,12 +557,12 @@ textarea {
 }
 
 .flex-direction-nav .flex-prev {
-  background-color: #000;/* */
+  background-color: #fff;
   padding: 20px;
   padding-right: 15px;
 }
 .flex-direction-nav .flex-next {
-  background-color: #000;/* */
+  background-color: #fff;
   padding: 20px;
   padding-left: 15px;
 }

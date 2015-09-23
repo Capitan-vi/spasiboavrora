@@ -7,52 +7,15 @@
     </div>
   </div>
 
+
+
   <!-- __Делаем отличные логотипы -->
-  <div class="row row-fluid mt120">
-    <div class="container">
-      <div class="col-sm-12">
-        <div class="b-about-intro">
-          <h1 class="b-about-intro__heading text-center">Мы делаем отличные логотипы</h1>
-          <h6 class="b-about-intro__text text-center">для индивидуальных предпринимателей,небольших проектов, некоммерческих организаций и мероприятий по фиксированной цене 4000 р. или бесплатно</h6>
-        </div>
-      </div>
+  <div class="row row-fluid">
+    <div class="page-content page-content_white">
+      <?php the_post(); ?>
+      <?php the_content(); ?>
     </div>
   </div>
-
-  <div class="container"></div>
-  <div class="row row-fluid mb120m60">
-    <div class="container">
-      <div class="col-sm-4">
-        <div class="oi_vc_present">
-          <div class="oi_vc_text_span">
-            <h6 class="oi_present_sub_titile colored">Who</h6>
-            <h4 class="oi_present_titile">WE ARE</h4>
-            <span class="oi_present_descr">Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="oi_vc_present">
-          <div class="oi_vc_text_span">
-            <h6 class="oi_present_sub_titile colored">Our</h6>
-            <h4 class="oi_present_titile">APPROACH</h4>
-            <span class="oi_present_descr">Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="oi_vc_present">
-          <div class="oi_vc_text_span">
-            <h6 class="oi_present_sub_titile colored">Why</h6>
-            <h4 class="oi_present_titile">CHOOSE US</h4>
-            <span class="oi_present_descr">Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container"> </div>
 
   <!-- __Блок с сотрудниками -->
   <div class="row row-fluid">
