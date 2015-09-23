@@ -37,18 +37,22 @@
     <div class="row">
       <div class="col-md-6 col-sm-6 io_xs">
         <a class="b-header-logotype" href="<?php get_site_url(); ?>">
-          <img class="b-header-logotype__img" src="<?php bloginfo("template_directory"); ?>/assets/images/logotype-avrora.png" alt="Логотип «СпасибоАврора»"></a>
+          <img class="b-header-logotype__img" src="<?php the_field('options__header-logotype', 'options'); //bloginfo("template_directory"); ?>" alt="Логотип «СпасибоАврора»"></a>
       </div>
+      <!-- /assets/images/logotype-avrora.png -->
 
       <div class="col-md-6 col-sm-6 io_xs">
         <i class="fa fa-bars fa-2x visible-xs oi_xs_menu"></i>
 
         <div class="b-header-top-slogan">
-          МЫ ДЕЛАЕМ ЛОГОТИПЫ ПО НИЗКОЙ ЦЕНЕ <strong>4000 Р.</strong> ИЛИ <strong>БЕСПЛАТНО</strong>
+          <?php the_field('options__header-slogan', 'options'); ?>
         </div>
 
         <div class="b-header-tel">
-          <a class="b-header-tel__link" href="tel:+79112394587">+7 - 911 - 239-45-87</a>
+          <a
+            class="b-header-tel__link"
+            href="tel:<?php the_field('options__header-phone-link', 'options'); ?>">
+              <?php the_field('options__header-phone', 'options'); ?></a>
         </div>
         <div class="menu-general-menu-container">
           <?php wp_nav_menu( array(

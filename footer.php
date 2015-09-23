@@ -5,8 +5,7 @@
 ?>
   <div class="row">
     <footer class="b-site-footer top-trangled top-trangled_grey-dark">
-      <div class="b-site-footer__slogan">-ПСС! ЕСЛИ ХОЧЕШЬ ЛОГОТИП ОТ НАС БЕСПЛАТНО, ОБОСНУЙ И ПОЛУЧИ ЕГО</div>
-      <div class="b-site-footer__caption">2013-2015 « SPASIBOAVRORA</div>
+      <?php the_field('options__footer-sloagan', 'options'); ?>
     </footer>
   </div>
 

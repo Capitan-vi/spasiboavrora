@@ -83,6 +83,9 @@ textarea {
 .b-header-top-slogan {
   font-size: 1.6rem;
 }
+.b-header-top-slogan p {
+  margin: 0;
+}
 
 .b-header-tel {
   float: left;
@@ -473,14 +476,18 @@ textarea {
   color: #fff;
   background-color: #434242;
 }
+  .b-site-footer p {
+    font-size: 2rem;
+    margin-bottom: .5em;
+  }
 
-  .b-site-footer__slogan {
+  .b-site-footer__slogan { /* */
     font-size: 2rem;
     margin-bottom: .5em;
     text-align: center;
   }
 
-  .b-site-footer__caption {
+  .b-site-footer__caption { /* */
     font-size: 2rem;
     text-align: center;
   }
