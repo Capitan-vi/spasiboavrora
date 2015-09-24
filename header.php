@@ -35,31 +35,31 @@
 <div class="oi_container_holder">
     <div class="row">
   <div class="oi_head_holder clearfix">
-      <div class="col-lg-5 col-md-4 col-sm-6 io_xs">
-        <a class="b-header-logotype" href="<?php get_site_url(); ?>">
-          <img class="b-header-logotype__img" src="<?php the_field('options__header-logotype', 'options'); //bloginfo("template_directory"); ?>" alt="Логотип «СпасибоАврора»"></a>
+      <div class="col-lg-5 col-md-4 col-sm-4 io_xs">
+        <a class="b-header-logotype" href="<?php echo get_site_url(); ?>">
+          <img class="b-header-logotype__img" src="<?php the_field('options__header-logotype', 'options'); ?>" alt="Логотип «СпасибоАврора»"></a>
       </div>
-      <!-- /assets/images/logotype-avrora.png -->
 
-      <div class="col-lg-7 col-md-8 col-sm-6 io_xs">
-        <i class="fa fa-bars fa-2x visible-xs oi_xs_menu"></i>
+      <div class="col-lg-7 col-md-8 col-sm-8 io_xs">
+        <!-- <i class="fa fa-bars fa-2x visible-xs oi_xs_menu"></i> -->
 
         <div class="b-header-top-slogan">
           <?php the_field('options__header-slogan', 'options'); ?>
         </div>
 
+        <div class="menu-general-menu-container">
+          <?php wp_nav_menu( array(
+            'theme_location' => 'primary',
+            'container' => 'nav',
+            'container_class' => 'clearfix',
+            'items_wrap' => '<ul id="menu-general-menu" class="oi_header_menu">%3$s</ul>'
+          ) ); ?>
+        </div>
         <div class="b-header-tel">
           <a
             class="b-header-tel__link"
             href="tel:<?php the_field('options__header-phone-link', 'options'); ?>">
               <?php the_field('options__header-phone', 'options'); ?></a>
-        </div>
-        <div class="menu-general-menu-container">
-          <?php wp_nav_menu( array(
-            'theme_location' => 'primary',
-            'container' => 'nav',
-            'items_wrap' => '<ul id="menu-general-menu" class="oi_header_menu">%3$s</ul>'
-          ) ); ?>
         </div>
 
       </div>
