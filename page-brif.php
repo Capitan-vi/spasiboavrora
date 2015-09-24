@@ -10,12 +10,13 @@ get_header(); ?>
 
   <div class="this_page">
 
-    <div class="row row-fluid">
-        <?php get_template_part('template-parts/front-slider'); ?>
+    <div class="page-content page-content_top-80">
+      <?php //the_post(); ?>
+      <?php //the_content(); ?>
     </div>
 
     <div class="row row-fluid">
-      <div class="page-content page-content_top-80">
+      <div class="page-content page-content_top-40">
         <?php the_post(); ?>
         <?php the_content(); ?>
 

@@ -598,10 +598,12 @@ textarea {
 
 /*  */
 .page-content {
-  min-height: 200px;
 }
   .page-content_top-80 {
     padding-top: 80px;
+  }
+  .page-content_top-40 {
+    padding-top: 40px;
   }
   .page-content_white {
     background-color: #fff;
@@ -615,6 +617,11 @@ textarea {
   font-size: 2rem;
   text-transform: none;
   color: #222;
+}
+@media (max-width: 979px) {
+  .b-form-brif {
+    padding: 0 20px;
+  }
 }
 
 .b-form-brif label {
