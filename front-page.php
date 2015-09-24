@@ -76,7 +76,7 @@
             <div class="b-order-logotype__option-left"><span class="b-order-logotype__option-left-text">ПОДБОР ШРИФТОВ готовых для использовани</span></div>
           </div>
 
-          <a class="b-order-logotype__link" href="#">Оформить заказ</a>
+          <a class="b-order-logotype__link" href="<?php the_field('options__order-link', 'options'); ?>">Оформить заказ</a>
         </div>
 
     </div>
