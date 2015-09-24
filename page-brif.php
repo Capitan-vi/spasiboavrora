@@ -15,7 +15,7 @@ get_header(); ?>
     </div>
 
     <div class="row row-fluid">
-      <div class="page-content">
+      <div class="page-content page-content_top-80">
         <?php the_post(); ?>
         <?php the_content(); ?>
 

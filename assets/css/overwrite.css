@@ -536,8 +536,10 @@ textarea {
 /*  */
 .page-content {
   min-height: 200px;
-  padding: 80px 40px;
 }
+  .page-content_top-80 {
+    padding-top: 80px;
+  }
   .page-content_white {
     background-color: #fff;
   }
