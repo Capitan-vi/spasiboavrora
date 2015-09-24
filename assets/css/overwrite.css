@@ -130,6 +130,7 @@ textarea {
 }
 
 .b-team-member {
+  min-height: 191px;
 }
 
   .b-team-member__photo {
@@ -138,11 +139,24 @@ textarea {
   }
     .b-team-member__img {
       max-width: 130px;
+      border-radius: 50%;
     }
 
   .b-team-member__about {
-    padding-left: 40px;
+    text-align: center;
   }
+  @media (min-width: 1200px) {
+    .b-team-member__about {
+      padding-left: 40px;
+      text-align: left;
+    }
+  }
+  @media (max-width: 991px) {
+    .b-team-member {
+      margin-bottom: 40px;
+    }
+  }
+
     .b-team-member__name {
       margin-bottom: 0;
       font-size: ;
@@ -152,7 +166,7 @@ textarea {
     }
     .b-team-member__caption {
       display: inline-block;
-      line-height: 1.15em;
+      line-height: 1.05em;
       text-transform: lowercase;
       font-weight: bold;
     }
@@ -288,21 +302,23 @@ textarea {
 }
   .b-review-item__photo {
     position: relative;
-    width: 40%; /* */
+    width: 40%;
     margin-right: 5%;
     float: left;
     text-align: center;
   }
-  .b-review-item__photo:after {
-    content: 'Λ';
-    position: absolute;
-    top: 13px;
-    right: -4%;
-    color: #fff;
-    font-size: 2rem;
-    line-height: .7em;
-    transform: rotate(-114deg);
-    font-family: sans-serif;
+  @media (min-width: 767px) {
+    .b-review-item__photo:after {
+      content: 'Λ';
+      position: absolute;
+      top: 13px;
+      right: -4%;
+      color: #fff;
+      font-size: 2rem;
+      line-height: .7em;
+      transform: rotate(-114deg);
+      font-family: sans-serif;
+    }
   }
     .b-review-item__img {
       max-width: 100%;

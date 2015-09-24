@@ -19,13 +19,12 @@
 
   <!-- __Блок с сотрудниками -->
   <div class="row row-fluid">
-    <div class="b-team top-trangled top-trangled_grey-light">
-      <div class="container">
+    <div class="content-wrap b-team top-trangled top-trangled_grey-light clearfix">
 
         <?php query_posts('post_type=team-member'); ?>
           <?php while ( have_posts() ): the_post(); ?>
 
-              <div class="col-md-2 col-sm-4  ">
+              <div class="col-md-2 col-sm-4 col-xs-6">
                 <section class="b-team-member">
                   <div class="b-team-member__photo">
                     <img class="b-team-member__img" src="<?php the_field('team-member_photo'); ?>" alt="Фото сотрудника">
@@ -40,7 +39,6 @@
           <?php endwhile; ?>
         <?php wp_reset_query(); ?>
 
-      </div>
     </div>
   </div>
 
