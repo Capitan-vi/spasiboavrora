@@ -26,8 +26,6 @@
   <!-- __Перезаписываемые стили -->
   <link rel='stylesheet' href='<?php bloginfo("template_directory"); ?>/assets/css/overwrite.css' type='text/css' media='all'/>
 
-  <!-- __заменить -->
-  <link rel="shortcut icon" href="<?php bloginfo("template_directory"); ?>/assets/images/favicon.ico">
   <?php wp_head(); ?>
 </head>
 
