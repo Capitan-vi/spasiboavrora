@@ -314,7 +314,8 @@ textarea {
 
 /* __Отзывы ("Нам говорят "спасибо"") */
 .b-reviews {
-  padding: 80px 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: #ECECEC;
   color: #000;
 }
@@ -340,7 +341,6 @@ textarea {
     }
 
   .b-reviews__items {
-    padding: 0 100px;
   }
 
 
@@ -368,7 +368,8 @@ textarea {
     }
   }
     .b-review-item__img {
-      max-width: 100%;
+      width: 100%;
+      max-width: 180px;
       border-radius: 50%;
     }
 
@@ -682,3 +683,11 @@ textarea {
   padding-left: 40px;
   padding-right: 40px;
 }
+
+@media (min-width: 980px) {
+  .content-wrap_b-reviews {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+}
+

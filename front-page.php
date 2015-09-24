@@ -84,19 +84,19 @@
 
   <!-- __Нам говорят "спасибо" -->
   <div class="row row-fluid">
-    <div class="b-reviews top-trangled top-trangled_grey-light">
+    <div class="b-reviews content-wrap content-wrap_b-reviews top-trangled top-trangled_grey-light">
       <div class="b-reviews__head">
         <h2 class="b-reviews__heading">Нам говорят спасибо</h2>
         <div class="b-reviews__intro-text">множество хороших людей оставляют свои позитивные отзывы в соц. сетях с тэгом #spasiboavrora, это единственная реклама нашего проекта</div>
       </div>
 
       <div class="row row-fluid">
-        <div class="b-reviews__items">
+        <div class="b-reviews__items clearfix">
 
           <?php query_posts('post_type=review'); ?>
             <?php while ( have_posts() ): the_post(); ?>
 
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6">
             <div class="b-review-item clearfix">
               <div class="b-review-item__photo">
                 <img src="<?php the_field('review_autor_photo'); ?>" alt="" class="b-review-item__img">
