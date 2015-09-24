@@ -552,7 +552,8 @@ textarea {
 
 /* __Футер сайта */
 .b-site-footer {
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
   color: #fff;
   background-color: #434242;
 }
@@ -572,6 +573,18 @@ textarea {
     text-align: center;
   }
 
+
+  .b-producer-caption {
+    text-align: left;
+    text-transform: uppercase;
+  }
+    .b-producer-caption__link {
+      color: #fff;
+    }
+    .b-producer-caption__link:focus,
+    .b-producer-caption__link:hover {
+      color: #fff;
+    }
 
 
 
