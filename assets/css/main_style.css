@@ -41,7 +41,7 @@ Primary use:	Portfolio site
 .oi_footer { background:#f5f5f5;   padding:0px 0px !important; margin-top:0px }
 .oi_f_head { margin:40px; margin-top:80px; background:#f5f5f5; position:fixed; z-index:-2 !important; left:0; top:0px; max-width:100%; width:auto; padding:220px 80px !important; right:0px; }
 
-body {letter-spacing:1px; padding:40px; background:#f5f5f5}
+body {letter-spacing:1px; background:#f5f5f5}
 ::selection {
 	background:#333;
 	color:#fff;
