@@ -4,9 +4,10 @@ body {
 .page_holder {
   background-color: transparent;
 }
-@media all {
+@media (min-width: 1200px) {
   body {
-    padding: 40px 55px;
+    padding: 0 55px;
+    padding-top: 40px;
     background-color: #f5f5f5;
   }
 }
