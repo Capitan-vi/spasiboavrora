@@ -4,7 +4,7 @@
  */
 ?>
   <div class="row">
-    <footer class="b-site-footer top-trangled top-trangled_grey-dark">
+    <footer class="b-site-footer content-wrap top-trangled top-trangled_grey-dark">
       <?php the_field('options__footer-sloagan', 'options'); ?>
     </footer>
   </div>

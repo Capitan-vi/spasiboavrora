@@ -505,7 +505,7 @@ textarea {
 
 /* __Футер сайта */
 .b-site-footer {
-  padding: 40px 40px;
+  padding: 40px 0;
   color: #fff;
   background-color: #434242;
 }
@@ -629,4 +629,9 @@ textarea {
 
 .flex-direction-nav a.flex-next:before {
   content: '';
+}
+
+.content-wrap {
+  padding-left: 40px;
+  padding-right: 40px;
 }
