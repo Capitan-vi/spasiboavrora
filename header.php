@@ -33,15 +33,15 @@
 
 <body>
 <div class="oi_container_holder">
-  <div class="oi_head_holder">
     <div class="row">
-      <div class="col-md-6 col-sm-6 io_xs">
+  <div class="oi_head_holder clearfix">
+      <div class="col-lg-5 col-md-4 col-sm-6 io_xs">
         <a class="b-header-logotype" href="<?php get_site_url(); ?>">
           <img class="b-header-logotype__img" src="<?php the_field('options__header-logotype', 'options'); //bloginfo("template_directory"); ?>" alt="Логотип «СпасибоАврора»"></a>
       </div>
       <!-- /assets/images/logotype-avrora.png -->
 
-      <div class="col-md-6 col-sm-6 io_xs">
+      <div class="col-lg-7 col-md-8 col-sm-6 io_xs">
         <i class="fa fa-bars fa-2x visible-xs oi_xs_menu"></i>
 
         <div class="b-header-top-slogan">

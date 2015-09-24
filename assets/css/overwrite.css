@@ -74,14 +74,22 @@ textarea {
 /* __Логотип в хэдере */
 
 .b-header-logotype__img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 350px;
+}
+@media (max-width: 1199px) {
+  .b-header-logotype__img {
+    width: 90%;
+  }
 }
 
 
 
 /* __Слоган в хэдере */
 .b-header-top-slogan {
-  font-size: 1.6rem;
+  font-size: 1.45rem;
+  /*letter-spacing: -.05ex;
+  */
 }
 .b-header-top-slogan p {
   margin: 0;
