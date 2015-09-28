@@ -679,6 +679,10 @@ textarea {
   padding-left: 15px;
 }
 
+.flex-direction-nav a {
+  margin-top: -45px;
+}
+
 .flex-direction-nav a:before {
   content: '';
   width: 0;
