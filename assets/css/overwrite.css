@@ -173,6 +173,13 @@ textarea {
   background-color: #ECECEC;
 }
 
+@media (max-width: 499px) {
+  .b-team .col-xs-6 {
+    float: none;
+    width: 100%;
+  }
+}
+
 .b-team-member {
   min-height: 191px;
 }
