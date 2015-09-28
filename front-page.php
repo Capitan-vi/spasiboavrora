@@ -11,7 +11,7 @@
 
   <!-- __Делаем отличные логотипы -->
   <div class="row row-fluid">
-    <div class="page-content page-content_white">
+    <div class="page-content page-content_white" id="about-project">
       <?php the_post(); ?>
       <?php the_content(); ?>
     </div>
@@ -46,7 +46,7 @@
 
   <!-- __Вы заказываете логотип за 4000р. -->
   <div class="row row-fluid">
-    <div class="b-order-logotype">
+    <div class="b-order-logotype" id="to-order">
 
         <div class="b-order-logotype__head">
           <h2 class="b-order-logotype__heading">Вы заказываете логотип за 4000 р.</h2>
@@ -84,7 +84,7 @@
 
   <!-- __Нам говорят "спасибо" -->
   <div class="row row-fluid">
-    <div class="b-reviews content-wrap content-wrap_b-reviews top-trangled top-trangled_grey-light">
+    <div class="b-reviews content-wrap content-wrap_b-reviews top-trangled top-trangled_grey-light" id="reviews">
       <div class="b-reviews__head">
         <h2 class="b-reviews__heading">Нам говорят спасибо</h2>
         <div class="b-reviews__intro-text">множество хороших людей оставляют свои позитивные отзывы в соц. сетях с тэгом #spasiboavrora, это единственная реклама нашего проекта</div>
@@ -130,7 +130,7 @@
 
   <!-- __ВЫ МОЖЕТЕ  ЛЕГКО СВЯЗАТЬСЯ С НАМИ -->
   <div class="row row-fluid">
-    <div class="b-contacts-front-page top-trangled top-trangled_green">
+    <div class="b-contacts-front-page top-trangled top-trangled_green" id="contacts">
 
       <div class="b-contacts-front-page__head">
         <h2 class="b-contacts-front-page__heading">Вы можете легко связаться с нами</h2>
@@ -141,14 +141,18 @@
 
       <div class="row row-fluid">
         <div class="col-md-6">
+          <div class="b-contacts-front-page__links">
             <ul class="b-contacts-front-page__list">
-              <li class="b-contacts-front-page__list-item">
-                <a href="tel:+79112394587" class="b-contacts-front-page__item-link">+7 911 239 45 87</a></li>
-              <li class="b-contacts-front-page__list-item">
-                <a href="mailto:spasiboavrora@gmail.com" class="b-contacts-front-page__item-link b-contacts-front-page__item-link_underline">spasiboavrora@gmail.com</a></li>
-              <li class="b-contacts-front-page__list-item">
-                <a href="vk.com/spasiboavrora" class="b-contacts-front-page__item-link b-contacts-front-page__item-link_underline">vk.com/spasiboavrora</a></li>
+              <?php
+                if( get_field('options__repeater-connect-links', 'options') ):
+                while( has_sub_field('options__repeater-connect-links', 'options') ): ?>
+
+                  <li class="b-contacts-front-page__list-item">
+                    <a href="<?php the_sub_field('options__con-link-addr', 'options'); ?>" class="b-contacts-front-page__item-link b-contacts-front-page__item-link_underline"><?php the_sub_field('options__con-link-text', 'options'); ?></a></li>
+
+              <?php endwhile; endif; ?>
             </ul>
+          </div>
         </div>
 
         <div class="col-md-6">
