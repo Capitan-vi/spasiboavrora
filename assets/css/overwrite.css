@@ -116,6 +116,7 @@ textarea {
 /* __Слоган в хэдере */
 .b-header-top-slogan {
   font-size: 1.45rem;
+  color: #333;
 }
 @media (min-width: 768px) {
   .b-header-top-slogan {
