@@ -8,7 +8,10 @@
       <?php the_field('options__footer-sloagan', 'options'); ?>
 
       <div class="b-producer-caption">
-        Сделано в <a href="http://astralite.pro/" class="b-producer-caption__link">Astralite</a> 2015
+        Сделано в <a
+          href="http://astralite.pro"
+          class="b-producer-caption__link"
+          target="_blank">Astralite</a> 2015
       </div>
     </footer>
   </div>
